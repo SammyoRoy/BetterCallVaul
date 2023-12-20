@@ -11,7 +11,12 @@ config_version=4
 [application]
 
 config/name="BetterCallVaul"
+run/main_scene="res://VaulsOffice.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GameState="*res://GameState.gd"
 
 [display]
 
