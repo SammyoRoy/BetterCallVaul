@@ -79,6 +79,7 @@ visible = true
 
 [node name="DayTracker" parent="." instance=ExtResource( 3 )]
 
+[connection signal="pressed" from="TravelButton/Travel" to="TravelButton/Travel" method="_on_Travel_pressed"]
 [connection signal="pressed" from="Computer/ResearchCase" to="Case Completion/Label" method="update"]
 [connection signal="pressed" from="Computer/ResearchCase" to="Computer/ResearchCase" method="_on_ResearchCase_pressed"]
 [connection signal="pressed" from="Computer/ResearchCase" to="TurnTracker" method="update"]
