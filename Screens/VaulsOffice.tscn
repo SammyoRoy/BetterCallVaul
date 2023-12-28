@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Art Assets/vaulconcept_office1.png" type="Texture" id=1]
 [ext_resource path="res://Phone.gd" type="Script" id=2]
-[ext_resource path="res://DayTracler.tscn" type="PackedScene" id=3]
+[ext_resource path="res://DayTracker.tscn" type="PackedScene" id=3]
 [ext_resource path="res://CaseCompletionLabel.gd" type="Script" id=4]
 [ext_resource path="res://Travel.gd" type="Script" id=5]
 [ext_resource path="res://TurnTracker.tscn" type="PackedScene" id=6]
@@ -75,7 +75,6 @@ margin_bottom = 182.0
 script = ExtResource( 2 )
 
 [node name="TurnTracker" parent="." instance=ExtResource( 6 )]
-visible = true
 
 [node name="DayTracker" parent="." instance=ExtResource( 3 )]
 

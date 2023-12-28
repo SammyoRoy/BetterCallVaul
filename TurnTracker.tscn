@@ -6,7 +6,6 @@
 [ext_resource path="res://TurnTracker.gd" type="Script" id=4]
 
 [node name="TurnTracker" type="Sprite"]
-visible = false
 position = Vector2( 920, 44 )
 scale = Vector2( 0.65748, 0.65748 )
 texture = ExtResource( 3 )
