@@ -12,10 +12,6 @@ var judgeTemper = 0;
 var day = 1;
 var turn = 1;
 
-# PI progress
-var PI_dialogue_key = "intro";
-var witnessesUnlocked = false;
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass;
