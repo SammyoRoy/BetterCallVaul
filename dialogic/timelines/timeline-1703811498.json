@@ -31,12 +31,275 @@
 
 			],
 			"portrait": "",
-			"question": "...can "
+			"question": "Can I help you?"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1703823706",
+			"index": 0,
+			"name": "Help you?"
+		},
+		{
+			"choice": "Are you Ziggy?",
+			"condition": "==",
+			"definition": "1703823189-918",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The one and only. And you are?"
+		},
+		{
+			"definition": "1703823189-918",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"anchor_id": "anchor-1703823706",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Why do you have so many cars parked around your place?",
+			"condition": "==",
+			"definition": "1703823284-483",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What are you, a cop? I’ve got a lot of friends."
+		},
+		{
+			"definition": "1703823284-483",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"anchor_id": "anchor-1703823706",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "I’m here on behalf of my client, Sam Yootz.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, Slippery Sam."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "The reason all of us in the South Quadrant have been eating nothing but stale crackers for half a week and counting."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "Eat Tomatoes"
+		},
+		{
+			"choice": "Can’t you eat some of the tomatoes you’re growing?",
+			"condition": "",
+			"definition": "1703823387-970",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "They’re not ripe."
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "How do you know it was him?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " I saw his car speeding by here two weekends ago."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "A green convertible, just like the photo the detectives showed me."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1703825657",
+			"index": 0,
+			"name": "Green Convertible"
+		},
+		{
+			"choice": "You don’t seem the type to talk to detectives.",
+			"condition": "",
+			"definition": "1703823875-713",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Desperate times and all that. Best to stay friendly."
+		},
+		{
+			"definition": "1703823875-713",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"condition": "",
+			"definition": "1703824386-339",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1703825657",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "This seems like a busy road. You’re sure it wasn’t some other convertible?",
+			"condition": "",
+			"definition": "1703824386-339",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": " I know my regulars. That car wasn’t one of theirs."
+		},
+		{
+			"choice": "Your “regulars?”",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " Regular…ly visiting friends."
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Young people and our slang, you know how it is."
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Look, you’re asking a lot of questions. You got a point to make?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"definition": "1703824386-339",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"condition": "",
+			"definition": "1703823875-713",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1703825657",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "Flarging finally"
+		},
+		{
+			"character": "character-1703826519.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s all, thanks."
+		},
+		{
+			"character": "character-1703811434.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(…flarging finally.)"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.5",
 		"file": "timeline-1703811498.json",
-		"name": "Ziggy"
+		"name": "ZiggyLearn"
 	}
 }

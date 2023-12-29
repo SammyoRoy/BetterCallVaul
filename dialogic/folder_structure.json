@@ -5,6 +5,7 @@
 	"folders": {
 		"Characters": {
 			"files": [
+				"character-1703826519.json",
 				"character-1703811434.json",
 				"character-1703811188.json"
 			],
@@ -21,7 +22,22 @@
 
 			],
 			"folders": {
+				"Dialogue Options": {
+					"files": [
+						"1703823189-918",
+						"1703823284-483",
+						"1703823387-970",
+						"1703823875-713",
+						"1703824386-339"
+					],
+					"folders": {
 
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
 			},
 			"metadata": {
 				"color": null,

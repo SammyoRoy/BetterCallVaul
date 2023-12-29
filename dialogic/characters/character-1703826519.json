@@ -1,11 +1,11 @@
 {
-	"color": "#ff16b170",
-	"description": "Witness 1",
+	"color": "#ffffffff",
+	"description": "",
 	"display_name": "",
 	"display_name_bool": false,
-	"id": "character-1703811434.json",
+	"id": "character-1703826519.json",
 	"mirror_portraits": false,
-	"name": "Ziggy",
+	"name": "Vaul",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Art Assets/ziggyWIP.png"
+			"path": ""
 		}
 	],
 	"scale": 100,
