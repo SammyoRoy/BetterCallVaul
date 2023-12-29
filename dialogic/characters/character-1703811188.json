@@ -1,0 +1,21 @@
+{
+	"color": "#ff93761d",
+	"description": "The Shady PI",
+	"display_name": "Malus",
+	"display_name_bool": true,
+	"id": "character-1703811188.json",
+	"mirror_portraits": true,
+	"name": "Malus Grins",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Art Assets/manusConcept.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}
