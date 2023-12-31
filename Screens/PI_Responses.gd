@@ -16,7 +16,7 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	text = "I can always count on you pal, worth every cred every time. I'll talk to you soon." 
+	text = "I can always count on you pal, worth every cred every time. I'll talk to you soon." ;
 
 
 func _on_TextureButton_pressed():

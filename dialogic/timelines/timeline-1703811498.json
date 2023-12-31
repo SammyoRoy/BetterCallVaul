@@ -295,6 +295,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "(…flarging finally.)"
+		},
+		{
+			"emit_signal": "ZiggyLearnsDone",
+			"event_id": "dialogic_040"
 		}
 	],
 	"metadata": {

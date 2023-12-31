@@ -16,8 +16,13 @@ func _ready():
 #	pass
 
 func _on_VaulsOffice_pressed():
-	get_tree().change_scene("res://Screens/VaulsOffice.tscn")
+	get_tree().change_scene("res://Screens/VaulsOffice.tscn");
+	print("to vaul's")
 
 
 func _on_ShadyCantina_pressed():
-	get_tree().change_scene("res://Screens/ShadyCantina.tscn")
+	get_tree().change_scene("res://Screens/ShadyCantina.tscn");
+	print("waaw")
+
+func _on_Witness1_pressed():
+	get_tree().change_scene("res://Screens/Witness1.tscn");

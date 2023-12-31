@@ -1,4 +1,4 @@
-extends Polygon2D
+extends Node2D
 
 
 # Declare member variables here. Examples:
@@ -8,7 +8,11 @@ extends Polygon2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	visible = GameState.witnessesUnlocked;
+	var dialog = Dialogic.start("ZiggyLearns")
+	dialog.connect("timeline_end", self, "end_dialog")
+	
+func end_dialog(data):
+	get_tree().change_scene("res://Screens/SectorMap.tscn")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
