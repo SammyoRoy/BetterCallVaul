@@ -5,9 +5,10 @@
 			"event_id": "dialogic_021"
 		},
 		{
-			"animation": "back_in_right.gd",
+			"animation": "[Default]",
 			"animation_length": 1,
 			"change_mirror_portrait": false,
+			"change_position": false,
 			"change_z_index": false,
 			"character": "character-1703811434.json",
 			"event_id": "dialogic_002",
@@ -19,10 +20,16 @@
 				"1": false,
 				"2": false,
 				"3": false,
-				"4": false
+				"4": true
 			},
 			"type": 0,
 			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1703823706",
+			"index": 0,
+			"name": "Help you?"
 		},
 		{
 			"character": "character-1703811434.json",
@@ -32,12 +39,6 @@
 			],
 			"portrait": "",
 			"question": "Can I help you?"
-		},
-		{
-			"event_id": "dialogic_015",
-			"id": "anchor-1703823706",
-			"index": 0,
-			"name": "Help you?"
 		},
 		{
 			"choice": "Are you Ziggy?",
@@ -106,6 +107,12 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1704008802",
+			"index": 0,
+			"name": "Eat Tomatoes"
+		},
+		{
 			"character": "character-1703811434.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -113,12 +120,6 @@
 			],
 			"portrait": "",
 			"question": "The reason all of us in the South Quadrant have been eating nothing but stale crackers for half a week and counting."
-		},
-		{
-			"event_id": "dialogic_015",
-			"id": "anchor-1634488067",
-			"index": 0,
-			"name": "Eat Tomatoes"
 		},
 		{
 			"choice": "Can’t you eat some of the tomatoes you’re growing?",
@@ -134,7 +135,15 @@
 			"text": "They’re not ripe."
 		},
 		{
-			"anchor_id": "anchor-1634488067",
+			"definition": "1703823387-970",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"anchor_id": "anchor-1704008802",
 			"event_id": "dialogic_016"
 		},
 		{
@@ -154,6 +163,12 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1703825657",
+			"index": 0,
+			"name": "Green Convertible"
+		},
+		{
 			"character": "character-1703811434.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -161,12 +176,6 @@
 			],
 			"portrait": "",
 			"question": "A green convertible, just like the photo the detectives showed me."
-		},
-		{
-			"event_id": "dialogic_015",
-			"id": "anchor-1703825657",
-			"index": 0,
-			"name": "Green Convertible"
 		},
 		{
 			"choice": "You don’t seem the type to talk to detectives.",
