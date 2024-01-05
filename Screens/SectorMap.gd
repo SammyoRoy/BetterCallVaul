@@ -15,5 +15,8 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func _on_TextureButton_pressed():
+func _on_vaulButton_pressed():
 	get_tree().change_scene("res://Screens/VaulsOffice.tscn")
+	
+func _on_shadyButton_pressed():
+	get_tree().change_scene("res://Screens/ShadyAlleyway.tscn")

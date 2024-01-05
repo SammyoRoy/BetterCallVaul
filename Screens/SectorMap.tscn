@@ -17,10 +17,22 @@ texture = ExtResource( 1 )
 color = Color( 0.964706, 0.32549, 0.984314, 0.364706 )
 polygon = PoolVector2Array( 504, 267, 503, 324, 498, 324, 491, 317, 484, 317, 484, 270, 495, 270, 499, 267 )
 
-[node name="TextureButton" type="TextureButton" parent="VaulPolygon"]
+[node name="vaulButton" type="TextureButton" parent="VaulPolygon"]
 margin_left = 481.0
 margin_top = 265.0
 margin_right = 506.0
 margin_bottom = 327.0
 
-[connection signal="pressed" from="VaulPolygon/TextureButton" to="." method="_on_TextureButton_pressed"]
+[node name="ShadyPolygon" type="Polygon2D" parent="."]
+position = Vector2( -94, 83 )
+color = Color( 0.964706, 0.32549, 0.984314, 0.364706 )
+polygon = PoolVector2Array( 503, 270, 503, 306, 494, 306, 493, 276, 489, 277, 483, 279, 483, 262, 489, 265, 500, 269 )
+
+[node name="shadyButton" type="TextureButton" parent="ShadyPolygon"]
+margin_left = 480.0
+margin_top = 260.0
+margin_right = 505.0
+margin_bottom = 310.0
+
+[connection signal="pressed" from="VaulPolygon/vaulButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="ShadyPolygon/shadyButton" to="." method="_on_TextureButton_pressed"]
