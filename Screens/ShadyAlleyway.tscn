@@ -14,3 +14,25 @@ texture = ExtResource( 1 )
 position = Vector2( 757, 306 )
 scale = Vector2( 0.341071, 0.341071 )
 texture = ExtResource( 2 )
+
+[node name="DialogueBox" type="ColorRect" parent="."]
+margin_left = 107.0
+margin_top = 128.0
+margin_right = 503.0
+margin_bottom = 277.0
+color = Color( 0.176471, 0.917647, 0.882353, 1 )
+
+[node name="CharDialog" type="Label" parent="DialogueBox"]
+margin_right = 394.0
+margin_bottom = 146.0
+
+[node name="ChoiceBox" type="ColorRect" parent="."]
+margin_left = 220.0
+margin_top = 441.0
+margin_right = 827.0
+margin_bottom = 607.0
+color = Color( 0.0352941, 0.12549, 0.447059, 1 )
+
+[node name="ChoiceText" type="Label" parent="ChoiceBox"]
+margin_right = 394.0
+margin_bottom = 146.0

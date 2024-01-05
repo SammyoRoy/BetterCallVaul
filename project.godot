@@ -410,7 +410,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-GameState="*res://GameState.gd"
+GameState="*res://Scripts/GameState.gd"
 __InkRuntime="*res://addons/inkgd/runtime/static/ink_runtime.gd"
 
 [display]

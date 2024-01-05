@@ -1,9 +1,10 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://TurnLabel.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/TurnLabel.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/Bauhaus64.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Art Assets/clockWIP.png" type="Texture" id=3]
-[ext_resource path="res://TurnTracker.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/TurnTracker.gd" type="Script" id=4]
+
 
 [node name="TurnTracker" type="Sprite"]
 visible = false
