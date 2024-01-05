@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Art Assets/vaulconcept_map1.png" type="Texture" id=1]
 [ext_resource path="res://Screens/SectorMap.gd" type="Script" id=2]
+[ext_resource path="res://DayTracker.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TurnTracker.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Screens/Witness3Polygon.gd" type="Script" id=5]
+[ext_resource path="res://Screens/Witness2Polyon.gd" type="Script" id=6]
+[ext_resource path="res://Screens/Witness1Polygon.gd" type="Script" id=7]
 
 [node name="SectorMap" type="Node2D"]
 script = ExtResource( 2 )
@@ -9,18 +14,61 @@ script = ExtResource( 2 )
 [node name="TravelScreenBGArt" type="Sprite" parent="."]
 
 [node name="VaulconceptMap1" type="Sprite" parent="TravelScreenBGArt"]
-position = Vector2( 517, 302 )
-scale = Vector2( 0.515475, 0.491684 )
+position = Vector2( 514.737, 302 )
+scale = Vector2( 0.517738, 0.491684 )
 texture = ExtResource( 1 )
 
 [node name="VaulPolygon" type="Polygon2D" parent="."]
+scale = Vector2( 0.994049, 0.998753 )
 color = Color( 0.964706, 0.32549, 0.984314, 0.364706 )
-polygon = PoolVector2Array( 504, 267, 503, 324, 498, 324, 491, 317, 484, 317, 484, 270, 495, 270, 499, 267 )
+polygon = PoolVector2Array( 504, 267, 503, 324, 498, 324, 491, 317, 484, 317, 484, 294.708, 484, 270, 495, 270, 499, 267 )
 
-[node name="TextureButton" type="TextureButton" parent="VaulPolygon"]
+[node name="VaulsOffice" type="TextureButton" parent="VaulPolygon"]
 margin_left = 481.0
 margin_top = 265.0
 margin_right = 506.0
 margin_bottom = 327.0
 
-[connection signal="pressed" from="VaulPolygon/TextureButton" to="." method="_on_TextureButton_pressed"]
+[node name="ShadyCantinaPolygon" type="Polygon2D" parent="."]
+position = Vector2( -21, 0 )
+scale = Vector2( 1.05085, 1 )
+color = Color( 0.0745098, 0.121569, 0.819608, 0.490196 )
+polygon = PoolVector2Array( 387, 345, 410, 354, 409, 375, 413, 379, 411, 383, 409, 386, 409, 390, 368, 390, 365, 387, 365, 362, 359, 359, 358, 354, 355, 354, 354, 347, 364, 348, 365, 342, 384, 331, 390, 332, 392, 346 )
+
+[node name="ShadyCantina" type="TextureButton" parent="ShadyCantinaPolygon"]
+margin_left = 353.0
+margin_top = 328.0
+margin_right = 415.0
+margin_bottom = 393.0
+
+[node name="DayTracker" parent="." instance=ExtResource( 3 )]
+position = Vector2( 836.938, 71.85 )
+scale = Vector2( 1.009, 1.009 )
+
+[node name="TurnTracker" parent="." instance=ExtResource( 4 )]
+position = Vector2( 960.125, 65.6949 )
+scale = Vector2( 0.942913, 0.942913 )
+
+[node name="Witness3Polygon" type="Polygon2D" parent="."]
+position = Vector2( -4, 0 )
+color = Color( 0.0156863, 0.901961, 0.0117647, 0.305882 )
+polygon = PoolVector2Array( 216, 452, 216, 419, 225, 406, 233, 412, 237, 412, 246, 381, 254, 374, 262, 372, 267, 393, 267, 422, 268, 430, 266, 433, 266, 450, 266, 457 )
+script = ExtResource( 5 )
+
+[node name="Witness2Polyon" type="Polygon2D" parent="."]
+position = Vector2( -47, -5 )
+color = Color( 0, 0.835294, 1, 0.419608 )
+polygon = PoolVector2Array( 685, 363, 687, 352, 694, 348, 699, 345, 707, 346, 714, 348, 719, 352, 723, 358, 723, 362, 723, 363 )
+script = ExtResource( 6 )
+
+[node name="Witness1Polygon" type="Polygon2D" parent="."]
+color = Color( 0.729412, 0.788235, 0.0431373, 0.501961 )
+polygon = PoolVector2Array( 370, 509, 370, 498, 375, 494, 393, 490, 405, 502, 406, 508, 395, 514, 386, 516, 379, 515 )
+script = ExtResource( 7 )
+
+[node name="CourthousePolygon" type="Polygon2D" parent="."]
+color = Color( 0.0980392, 0.74902, 0.47451, 0.560784 )
+polygon = PoolVector2Array( 844, 387, 844, 381, 847, 380, 848, 376, 849, 364, 850, 355, 849, 353, 849, 346, 846, 344, 846, 341, 848, 341, 848, 334, 846, 334, 845, 329, 851, 330, 859, 320, 875, 314, 875, 308, 880, 296, 883, 304, 889, 307, 888, 312, 894, 316, 907, 323, 909, 330, 918, 330, 918, 333, 912, 334, 912, 341, 917, 342, 916, 345, 913, 345, 913, 356, 912, 357, 913, 377, 915, 379, 916, 382, 919, 383, 919, 388 )
+
+[connection signal="pressed" from="VaulPolygon/VaulsOffice" to="." method="_on_VaulsOffice_pressed"]
+[connection signal="pressed" from="ShadyCantinaPolygon/ShadyCantina" to="." method="_on_ShadyCantina_pressed"]
