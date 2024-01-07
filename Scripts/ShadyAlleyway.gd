@@ -1,6 +1,6 @@
 # warning-ignore-all:return_value_discarded
 
-extends Node2D
+extends Control
 
 # ############################################################################ #
 # Imports
@@ -13,7 +13,7 @@ var InkPlayer = load("res://addons/inkgd/ink_player.gd")
 # ############################################################################ #
 
 # Alternatively, it could also be retrieved from the tree.
-# onready var _ink_player = $InkPlayer
+#onready var _ink_player = $InkPlayer
 onready var _ink_player = InkPlayer.new()
 
 # ############################################################################ #
@@ -26,7 +26,7 @@ func _ready():
 
 	# Replace the example path with the path to your story.
 	# Remove this line if you set 'ink_file' in the inspector.
-	_ink_player.ink_file = load("res://path/to/file.ink.json")
+	_ink_player.ink_file = load("res://InkDialogues/inkTest.ink.json")
 
 	# It's recommended to load the story in the background. On platforms that
 	# don't support threads, the value of this variable is ignored.
@@ -58,18 +58,20 @@ func _story_loaded(successfully: bool):
 # ############################################################################ #
 
 func _continue_story():
-	while _ink_player.can_continue:
-		var text = _ink_player.continue_story()
-		# This text is a line of text from the ink story.
+	print('continue story')
+	#while _ink_player.can_continue:
+	print('ink player can continue')
+	var text = _ink_player.continue_story()
+	# This text is a line of text from the ink story.
 		# Set the text of a Label to this value to display it in your game.
-		print(text)
+	print(text)
 	if _ink_player.has_choices:
 		# 'current_choices' contains a list of the choices, as strings.
 		for choice in _ink_player.current_choices:
 			print(choice)
 		# '_select_choice' is a function that will take the index of
 		# your selection and continue the story.
-		_select_choice(0)
+		#_select_choice(0)
 	else:
 		# This code runs when the story reaches it's end.
 		print("The End")
